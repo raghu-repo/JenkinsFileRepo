@@ -1,1 +1,36 @@
-https://github.com/raghu-repo/new-hellow-world.git
+
+
+pipeline {
+  
+     agent any
+   
+
+    stages {
+        
+            stage('Build') {
+   
+                 steps {
+          
+                     git 'https://github.com/raghu-repo/new-hellow-world.git'
+       
+                 }
+             
+     
+           }
+           
+           stage('Test') {
+	      
+	                    steps {
+	             
+	                        bat 'javac prog2.java
+                          bat 'java prog2
+	          
+	                    }
+	                
+	        
+           }
+        
+          
+  
+         }
+}
