@@ -23,7 +23,7 @@ pipeline {
 	                    steps {
 	             
 	                        bat 'javac prog2.java'
-                          bat 'java prog2
+                          bat 'java prog2'
 	          
 	                    }
 	                
